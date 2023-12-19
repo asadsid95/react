@@ -1,5 +1,5 @@
 function Nav(props) {
-  console.log(props);
+  // console.log(props);
 
   return (
     <div>

@@ -6,6 +6,7 @@ import Intro2 from "./components/Intro2";
 import Intro3 from "./components/Intro3";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
+import Button from "./components/Button";
 
 function App() {
   const someprop = { message: "this is a props value" };
@@ -14,7 +15,13 @@ function App() {
     <div>
       <Nav props={someprop} />
       <Promo />
-      <Intro children={<Intro2 />} />
+
+      <Button />
+      <Intro>
+        <Intro1 />
+        <Intro2 />
+        <Intro3 />
+      </Intro>
       <Footer />
     </div>
   );
